@@ -7,10 +7,10 @@
             style="border-radius:0px;"
         >
             <div slot="header" style="font-size:60%;" class="font-weight-lighter">
-                VeChain
+                VeBlocks.net
                 <span class="text-serif">Insight</span>
             </div>
-            <div slot="lead">Serverless Explorer</div>
+            <div slot="lead">Serverless Explorer - developed by VeChain</div>
             <b-input-group class="mx-auto col-lg-6">
                 <b-form-input
                     placeholder="block, tx or account"
