@@ -49,30 +49,6 @@
                                 </div>
                             </b-nav-item>
                         </template>
-                        <b-nav-item-dropdown class="mr-3">
-                            <!-- Using button-content slot -->
-                            <template slot="button-content">
-                                <span>Alternatives</span>
-                            </template>
-                            <b-dropdown-item
-                                v-for="(item,i) in alters"
-                                :key="i"
-                                :href="item.href"
-                                target="_blank"
-                            >{{item.title}}</b-dropdown-item>
-                        </b-nav-item-dropdown>
-                        <b-nav-item-dropdown class="mr-3">
-                            <!-- Using button-content slot -->
-                            <template slot="button-content">
-                                <span>Tools</span>
-                            </template>
-                            <b-dropdown-item
-                                v-for="(item,i) in tools"
-                                :key="i"
-                                :href="item.href"
-                                target="_blank"
-                            >{{item.title}}</b-dropdown-item>
-                        </b-nav-item-dropdown>
                         <b-nav-item href="https://github.com/vechain/" target="_blank">
                             <SvgIcon name="mark-github" />
                         </b-nav-item>
@@ -151,23 +127,6 @@ export default class Frame extends Vue {
             return
         }
         this.$router.push({ name: 'search', query: { q: str } })
-    }
-    get alters() {
-        return [
-            { title: 'Official Explorer', href: 'https://explore.vechain.org/' },
-            { title: 'VeChainThorScan', href: 'https://vechainthorscan.com/' },
-            { title: 'Vexplorer', href: 'https://vexplorer.io/' },
-            { title: 'VeChainStats', href: 'https://vechainstats.com/' }
-        ]
-    }
-
-    get tools() {
-        return [
-            { title: 'Inspector', href: 'https://inspector.vecha.in' },
-            { title: 'Tokens', href: 'https://laalaguer.github.io/vechain-token-transfer/' },
-            { title: 'B32', href: 'https://b32.vecha.in' },
-            { title: 'VeChainLinks', href: 'https://vechainlinks.com' }
-        ].filter(i => !!i.href)
     }
 
     get routeViewKey() {
