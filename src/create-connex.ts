@@ -41,9 +41,9 @@ const testNetGenesis = {
 
 class SimpleDriver extends DriverNoVendor {
     constructor(net: 'main' | 'test') {
-        let url = 'http://localhost:8669'
+        let url = 'https://mainnet.veblocks.net'
         if (process.env.NODE_ENV === 'production') {
-            url = net === 'main' ? 'https://sync-mainnet.vechain.org' : 'https://sync-testnet.vechain.org'
+            url = net === 'main' ? 'https://mainnet.veblocks.net' : 'https://testnet.veblocks.net'
         }
         super(new SimpleNet(url), net === 'main' ? mainNetGenesis : testNetGenesis)
     }
