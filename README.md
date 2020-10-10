@@ -1,13 +1,14 @@
 # VeChain Insight
 
 > Insight is a **serverless** VeChain explorer. It allows you to explore and search for blocks, transactions and accounts. 
+> This repo changed the connections to the public nodes hosted by veblocks (https://github.com/mirei83/VeChain-PublicNodes).
 
-[Try it out!](https://insight.vecha.in/#/)
+[Try it out!](https://explore.veblocks.net/#/)
 
 ## Permanent links
 
-* Main net - `https://insight.vecha.in/#/main/txs/{txid}`
-* Test net - `https://insight.vecha.in/#/test/txs/{txid}`
+* Main net - `https://explore.veblocks.net/#/main/txs/{txid}`
+* Test net - `https://explore.veblocks.net/#/test/txs/{txid}`
 
 ## Screenshots
 
